@@ -1,0 +1,95 @@
+@import "../../vars.css";
+
+.navbar {
+  position: fixed;
+  background-color: var(--color-primary);
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+
+  color: var(--color-text-white);
+  z-index: 11;
+  height: 70px; 
+}
+
+.menuBtn {
+  display: none;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-text-white);
+  margin-left: 4%;
+}
+
+.menu {
+  display: flex;
+}
+
+.menuItems {
+  display: flex;
+  gap: 47px;
+  list-style-type: none;
+}
+
+.menuItems a {
+  font-size: 25px;
+  color: var(--color-text-black);
+  text-decoration: none;
+  margin-left: -40%;
+}
+
+.darkModeToggle {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding-top: 10px; 
+    height: 60px;
+  }
+
+  .menu {
+    position: absolute;
+    right: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 11px;
+  }
+
+  .menuBtn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menuItems {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    border-radius: 10px;
+    background: #b13ce6;
+    background: linear-gradient(0deg, #793ce6 0%, #b13ce6 100%);
+    padding: 24px 33px;
+  }
+
+  .menuOpen {
+    display: flex;
+    z-index: 1;
+  }
+
+  .menuItems a {
+    margin-left: 0;
+  }
+}
