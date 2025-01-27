@@ -29,7 +29,7 @@ const Gallery = () => {
         </div>
         <div className={styles.gridItem}>
           <img
-            src="./gallery/horse5.webp"
+            src="./gallery/horse4.webp"
             alt="Gallery Image 5"
             className={styles.image}
           />
