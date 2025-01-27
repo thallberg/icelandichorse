@@ -13,7 +13,7 @@ const About = () => {
     >
       <h2 className={styles.title}>This is us</h2>
       <div className={styles.content}>
-        <img src="./about/aboutImg.webp" alt="" className={styles.aboutImage} />
+        <img src="./about/aboutImg1.webp" alt="" className={styles.aboutImage} />
 
         <div className={styles.aboutItemText}>
           <h3>The journey begins here</h3>

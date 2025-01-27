@@ -19,17 +19,17 @@ const Footer = () => {
         
         <ul className={styles.links}>
           <li className={styles.link}>
-            <img src="./contact/gmail.png" alt="Email icon" />
+            <img src="./contact/gmail.webp" alt="Email icon" />
             <a href="mailto:t.yourmail@gmail.com">Email me</a>
           </li>
           <li className={styles.link}>
-            <img src="./contact/facebook.png" alt="Facebook icon" />
+            <img src="./contact/facebook.webp" alt="Facebook icon" />
             <a href="" target="_blank">
               Facebook
             </a>
           </li>
           <li className={styles.link}>
-            <img src="./contact/instagram.png" alt="Instagram icon" />
+            <img src="./contact/instagram.webp" alt="Instagram icon" />
             <a href="" target="_blank">
               Instagram
             </a>

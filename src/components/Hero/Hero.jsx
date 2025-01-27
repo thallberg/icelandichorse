@@ -16,7 +16,7 @@ const Hero = () => {
       </div>
 
       <div>
-        <img className={styles.heroImg} src="./hero/heroImg.webp" alt="Hero image of a horse" />
+        <img className={styles.heroImg} src="./hero/heroImg1.webp" alt="Hero image of a horse" />
       </div>
     </section>
   );

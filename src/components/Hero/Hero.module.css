@@ -60,19 +60,23 @@
   margin-bottom: 33px;
   margin-top: -30%;
   animation: slideInFromTop 1s ease-out;
+  will-change: transform, opacity;
 }
 
 .description {
   opacity: 0;
   visibility: hidden;
   animation: slideInLeft 1.2s ease-out 0.5s forwards; 
+  will-change: transform, opacity;
 }
 
 .heroImg {
   margin-top: -20%;
   width: 100%;
+  height: 100%;
   z-index: 1;
   animation: slideInRight 1.5s ease-out;
+  will-change: transform, opacity;
 }
 
 @media screen and (max-width: 768px) {
