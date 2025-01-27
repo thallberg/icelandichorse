@@ -7,7 +7,7 @@ const About = () => {
 
   const { ref, inView: isInView } = useInView({
     triggerOnce: true, // När den triggas första gången stannar den där
-    threshold: 0.5, // För att trigga när 50% av About är synlig
+    threshold: 0.8, // För att trigga när 80% av About är synlig
   });
 
   React.useEffect(() => {
