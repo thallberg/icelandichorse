@@ -41,11 +41,12 @@ const Navbar = () => {
             <a href="#about">About</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
-          </li>
-          <li>
             <a href="#gallery">Gallery</a>
           </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+
               {/* Dark/Light Mode Toggle */}
               <img
               src="./navbar/moon.png"

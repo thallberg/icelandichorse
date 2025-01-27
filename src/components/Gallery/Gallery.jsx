@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Gallery.module.css";
+import { useInView } from "react-intersection-observer";
 
 const Gallery = () => {
+  const [inView, setInView] = useState(false);
+
+  const { ref, inView: isInView } = useInView({
+    triggerOnce: true, // När den triggas första gången stannar den där
+    threshold: 0.5, // För att trigga när 80% av About är synlig
+  });
+
+  React.useEffect(() => {
+    if (isInView) {
+      setInView(true); // Sätt inView till true när About-sektionen är synlig
+    }
+  }, [isInView]);
+
   return (
-    <section className={styles.container} id="gallery">
+    <section
+      className={`${styles.container} ${inView ? styles.animate : ""}`}
+      id="gallery"
+      ref={ref}
+      
+      >
       <h2 className={styles.title}>Gallery</h2>
       <div className={styles.grid}>
         <div className={styles.gridItem}>
